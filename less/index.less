@@ -1,0 +1,52 @@
+/**
+ em 相对于当前文字大小 
+ rem 是想对于根元素html大小
+ 1rem = html的font-size
+*/
+@rem: 75rem;
+
+// html {
+//     font-size: 10vw;
+// }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+// .box {
+//     font-size: 30/@rem;
+//     // width: 10em; // 1em = 30/@rem => 2000/@rem
+//     width: 10rem; // 1rem = 26/@rem => 260/@rem
+//     height: 100/@rem;
+//     background-color: pink;
+// }
+header {
+    height: 90/@rem;
+    background: #323436;
+    display: flex;
+    justify-content: space-between;
+
+    .menuBtn {
+        width: 90/@rem;
+        height: 90/@rem;
+        background: url("../image/miaov_08.png") no-repeat 16/@rem 24/@rem;
+        background-size: 49/@rem 45/@rem;
+    }
+
+    .logo {
+        padding-top: 17/@rem;
+
+        img {
+            width: 218/@rem;
+            height: 49/@rem;
+            vertical-align: top;
+        }
+    }
+    .login {
+        width: 90/@rem;
+        height: 90/@rem;
+        background: url("../image/miaov_05.png") no-repeat 17/@rem 20/@rem;
+        background-size: 50/@rem 52/@rem;
+    }
+}
