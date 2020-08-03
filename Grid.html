@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(3,33.3%);
+            /* grid-template-columns: repeat(2, 100px 20px 80px); */
+            grid-template-rows: repeat(3, 33.3%);
+            /* grid-template-columns: repeat(auto-fill, 100px); */
+            /* grid-template-columns: 150px 1fr 2fr; */
+        }
+
+        .item {
+            font-size: 4em;
+            text-align: center;
+            border: 1px solid #e5e4e9;
+        }
+
+        .item-1 {
+            background-color: #ef342a;
+        }
+
+        .item-2 {
+            background-color: #f68f26;
+        }
+
+        .item-3 {
+            background-color: #4ba946;
+        }
+
+        .item-4 {
+            background-color: #0376c2;
+        }
+
+        .item-5 {
+            background-color: #c077af;
+        }
+
+        .item-6 {
+            background-color: #f8d29d;
+        }
+
+        .item-7 {
+            background-color: #b5a87f;
+        }
+
+        .item-8 {
+            background-color: #d0e4a8;
+        }
+        .item-9 {
+            background-color: #4dc7ec;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Grid布局：网格布局（Grid）是最强大的 CSS 布局方案。
+        它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。
+        与Flex区别：
+                Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以看作是一维布局。
+                Grid 布局则是将容器划分成"行"和"列"，产生单元格，然后指定"项目所在"的单元格，可以看作是二维布局。Grid 布局远比 Flex 布局强大。
+        采用网格状布局的区域，成为容器，容器内部采用网格定位的顶层子元素，成为“项目”, Grid 布局只对项目生效。
+     -->
+    <div id="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+    </div>
+</body>
+
+</html>

@@ -14,12 +14,13 @@
         </div>
         <div class="login"></div>
     </header>
-    <script>
+    <script type="module">
         function setRem() {
             const html = document.querySelector("html");
             html.style.fontSize = window.innerWidth / 10 + "px"
         }
         setRem();
+        window.onresize = setRem;
     </script>
 </body>
 </html>
